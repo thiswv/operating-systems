@@ -1,5 +1,5 @@
-第1,2,3题:
-代码:
+* **第1,2,3题**
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,10 +23,10 @@ valgrind:
 ==4137== For lists of detected and suppressed errors, rerun with: -s
 ==4137== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0
 全是0, 没有问题
+```
 
-
-第4题:
-代码:
+* **第4题**
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -55,10 +55,11 @@ valgrind:
 ==4183== For lists of detected and suppressed errors, rerun with: -s
 ==4183== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 在堆上发生内存泄漏, 有4个字节未被清理
+```
 
 
-第5题:
-代码:
+* **第5题**
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -90,10 +91,10 @@ valgrind:
 ==4226== For lists of detected and suppressed errors, rerun with: -s
 ==4226== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 堆中有400字节没有被释放
+```
 
-
-第6题:
-代码:
+* **第6题**
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -148,10 +149,11 @@ a[100] 0
 ==4253== For lists of detected and suppressed errors, rerun with: -s
 ==4253== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
 两次无效读取错误, 为什么a[100]有答案呢, 可能是没有其他的代码的影响那块内存
+```
 
 
-第7题:
-代码:
+* **第7题**
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -167,6 +169,7 @@ int main()
 运行结果 free(): invalid pointer
 释放一个无效的指针
 不需要工具,直接会报错.
+```
 
 
 

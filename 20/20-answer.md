@@ -1,4 +1,5 @@
-第1题：
+* **第1题**
+```
 一个寄存器就够了。
 对于一个地址空间来说可以分成
 VPN      偏移量构成
@@ -6,8 +7,11 @@ VPN可以再细分成下一层次的
 页目录索引   页表索引
 
 所以只需要保存一个地址就行，不管有几层结构，都可以通过地址的移位加上偏移量找到对应的值
+```
 
-第2题：
+
+* **第2题**
+```
 python3 paging-multilevel-translate.py -s 0 -c
 分析几个，其余都一样的
 Virtual Address 0x611c
@@ -27,11 +31,13 @@ pde 的格式 V  PTE   33代表33页，业内偏移量用中间五位决定为 8
 value 0x08
 
 
-
 python3 paging-multilevel-translate.py -s 1 -c
 python3 paging-multilevel-translate.py -s 2 -c
+```
 
 
-第3题：
+* **第3题**
+```
 如果经常对内存进行引用，是会出现在缓存中的，会导致快速访问
 但如果访问的内存在tlb内全有，那缓存里可能不会有太多的页表地址，导致访问缓慢
+```

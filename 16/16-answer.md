@@ -1,5 +1,5 @@
-第1题
-
+* **第1题**
+```
 python3 segmentation.py -a 128 -p 512 -b 0 -l 20 -B 512 -L 20 -s 0 -c
 ARG seed 0
 ARG address space size 128
@@ -81,16 +81,19 @@ VA  1    1           -7           505
 VA  2    0           7            7
 VA  3    0           10           10
 VA  4    1           22           越界
+```
 
-
-第2题       
+* **第2题**
+```       
 段0  最高的合法虚拟地址   19
 段1  最低的合法虚拟地址   108
 最低非法地址  20
 最高非法地址  128
+```
 
 
-第三题
+* **第三题**
+```
 python3 segmentation.py -a 16 -p 128 -A 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 --b0 0 --l0 2 --b1 16 --l1 2 -c
 ARG seed 0
 ARG address space size 16
@@ -121,9 +124,15 @@ Virtual Address Trace
   VA 13: 0x0000000d (decimal:   13) --> SEGMENTATION VIOLATION (SEG1)
   VA 14: 0x0000000e (decimal:   14) --> VALID in SEG1: 0x0000000e (decimal:   14)
   VA 15: 0x0000000f (decimal:   15) --> VALID in SEG1: 0x0000000f (decimal:   15)
+```
 
-第4题
+
+* **第4题**
+```
 占物理地址90%， base0 设置为 0， base1 设置为 90 * U  (U 为物理空间总量)
+```
 
-第5题
+* **第5题**
+```
 base0 == base1 == 0
+```

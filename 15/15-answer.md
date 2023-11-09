@@ -1,4 +1,5 @@
-第1题
+* **第1题**
+```
 python3 relocation.py -s 1
 
 ARG seed 1
@@ -54,9 +55,11 @@ Virtual Address Trace
   VA  2: 0x00000280 (decimal:  640) --> SEGMENTATION VIOLATION
   VA  3: 0x00000043 (decimal:   67) --> VALID: 0x00002317 (decimal: 8983)
   VA  4: 0x0000000d (decimal:   13) --> VALID: 0x000022e1 (decimal: 8929)
+```
 
 
-第2题
+* **第2题**
+```
 python3 relocation.py -s 0 -n 10 -l 930 -c
 
 ARG seed 0
@@ -80,8 +83,11 @@ Virtual Address Trace
   VA  8: 0x00000255 (decimal:  597) --> VALID: 0x00003860 (decimal: 14432)
   VA  9: 0x000003a1 (decimal:  929) --> VALID: 0x000039ac (decimal: 14764)
 观察种子为0时的结果可以发现，最大的虚拟内存值为929，所以把-l 定为大于929即可
+```
 
-第3题
+
+* **第3题**
+```
 翻译有误求base的最大值
 relocation.py -s 1 -n 10 -l 100 -c
 
@@ -131,9 +137,11 @@ Virtual Address Trace
   VA  8: 0x00000060 (decimal:   96) --> VALID: 0x00003ffc (decimal: 16380)
   VA  9: 0x0000001d (decimal:   29) --> VALID: 0x00003fb9 (decimal: 16313)
 发现是可以的
+```
 
 
-第4题
+* **第4题**
+```
 随便写几个数
 python3 relocation.py -s 1 -n 10 -b 16284 -a 30k -p 50k -c
 
@@ -157,7 +165,10 @@ Virtual Address Trace
   VA  7: 0x00000b43 (decimal: 2883) --> VALID: 0x00004adf (decimal: 19167)
   VA  8: 0x00000366 (decimal:  870) --> VALID: 0x00004302 (decimal: 17154)
   VA  9: 0x0000644a (decimal: 25674) --> SEGMENTATION VIOLATION
+```
 
 
-第5题
+* **第5题**
+```
 虚拟地址的值，必须小于界限寄存器的值才有效
+```

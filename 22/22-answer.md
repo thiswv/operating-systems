@@ -1,4 +1,5 @@
-第1题
+* **第1题**
+```
 python3 paging-policy.py -s 0 -n 10 -p FIFO -c
 ARG addresses -1
 ARG addressfile 
@@ -83,29 +84,34 @@ FINALSTATS hits 4   misses 6   hitrate 40.00
 
 python3 paging-policy.py -s 1 -n 10 -p OPT -c
 python3 paging-policy.py -s 2 -n 10 -p OPT -c
+```
 
 
-第2题
+* **第2题**
+```
 python3 paging-policy.py -a 1,2,3,4,5,6 -C 5 -p FIFO -c
 python3 paging-policy.py -a 1,2,3,4,5,6 -C 5 -p LRU -c
 python3 paging-policy.py -a 1,2,3,4,5,6 -C 5 -p MRU -c
 命中率都为0
 
 最少要等于序列的个数
+```
 
-
-第3题
+* **第3题**
+```
 代码由此处参考
 https://github.com/jzplp/OSTEP-Answers/blob/main/Chapter-22/Chapter-22-Homework-Answers.md
 
 opt表现最好，其他都具有随机性
+```
 
 
-第4题
+* **第4题**
+```
 代码由此处参考
 https://github.com/jzplp/OSTEP-Answers/blob/main/Chapter-22/Chapter-22-Homework-Answers.md
 
 但我用不同的时钟位，怎么没有任何的变化，奇怪，不知道自己哪里错了！
+```
 
-
-第5题
+* **第5题**
